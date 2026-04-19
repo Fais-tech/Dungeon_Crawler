@@ -33,11 +33,11 @@ int main()
 
         if (characterChoice == 1)
         {
-            character1.setCharacter("Rogue", 1, 15, 5, 7);
+            character1.setCharacter("Rogue", 1, 35, 10, 15);
         }
         else if (characterChoice == 2)
         {
-            character1.setCharacter("Warrior", 1, 200, 100, 50);
+            character1.setCharacter("Warrior", 1, 40, 20, 10);
         }
         else if (characterChoice != 1 && characterChoice != 2)
         {
