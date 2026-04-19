@@ -1,16 +1,60 @@
-##Overview
+# Dungeon Project
 
-This is a C++ project I developed during my semester taking CSCI 1300 at CU Boulder. The goal of this project is to show my skills in C++
-by using object-oriented principles in order to design a game.
+A C++ dungeon crawler built as a semester project for CSCI 1300 at CU Boulder.
 
-##Instructions
-To compile this you can run this command in your terminal: 
-`g++ main.cpp Character.cpp Loot.cpp Monster.cpp helperFunctions.cpp global.cpp`
+## Overview
 
-In order to play the game you must first choose the number of floors you would like to go on. The deeper you go into the dungeon
-the harder the enemies get. However, your loot and player will scale as well. Next, you pick your character, each with different stats.
-Finally, to play the game, you choose between 1. Attack 2. Defend. Attacking allows you to choose an enemy to hit while defending gives you
-extra shield. After each encounter there will be a choice between three randomly generated pieces of loot. Try and get as far as you can! 
+Explore a multi-floor dungeon, fight monsters, and collect loot. This project uses object-oriented design to organize game logic across multiple classes and source files.
 
-##Objective
-With this project I wanted to show my skills at the end of my first semester learning how to code. I wanted to show specific priniciples in object-oriented programming such as classes, encapsulation, relationship management, file I/O, and code organization.
+## Features
+
+- Object-oriented design with separate classes for `Character`, `Monster`, and `Loot`
+- Dungeon progression with increasing difficulty by floor
+- Player choices for attacking or defending during combat
+- Randomized loot rewards after each encounter
+- Simple command-line gameplay with character selection and floor-based scaling
+- Run history logging in `Run_History.txt`
+
+## Build Instructions
+
+Compile with:
+
+```bash
+g++ main.cpp Character.cpp Loot.cpp Monster.cpp helperFunctions.cpp global.cpp -o dungeonGame
+```
+
+Run the game with:
+
+```bash
+./dungeonGame
+```
+
+## How to Play
+
+1. Choose the number of dungeon floors to explore.
+2. Select a character with unique stats.
+3. During combat, choose between:
+   - `Attack` — target an enemy and deal damage
+   - `Defend` — increase the value of your shield
+4. After each battle, pick one of three randomly generated loot items.
+5. Progress as far as you can through the dungeon.
+
+## Purpose
+
+This project demonstrates key C++ concepts:
+
+- Classes and encapsulation
+- Object relationships and game state management
+- Modular code organization across multiple source files
+- Basic user interaction through the terminal
+- File I/O for run history tracking
+
+## Files
+
+- `main.cpp` — game entry point and overall flow
+- `Character.cpp` / `Character.h` — player character implementation
+- `Monster.cpp` / `Monster.h` — monster generation and behavior
+- `Loot.cpp` / `Loot.h` — loot creation and item handling
+- `helperFunctions.cpp` / `helperFunctions.h` — shared utility functions
+- `global.cpp` / `global.h` — global constants and shared data
+- `Run_History.txt` — stores a history of final game runs
