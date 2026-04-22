@@ -6,14 +6,19 @@ A C++ dungeon crawler built as a semester project for CSCI 1300 at CU Boulder.
 
 Explore a multi-floor dungeon, fight monsters, and collect loot. This project uses object-oriented design to organize game logic across multiple classes and source files.
 
-## Features
+## Key Features
+- Object-oriented design with classes for Character, Monster, and Loot
+- Multi-floor dungeon system with increasing difficulty scaling
+- Turn-based combat system with attack and defend mechanics
+- Randomized loot generation after encounters
+- Persistent run history tracking using file I/O
+- Command-line interface for user interaction
 
-- Object-oriented design with separate classes for `Character`, `Monster`, and `Loot`
-- Dungeon progression with increasing difficulty by floor
-- Player choices for attacking or defending during combat
-- Randomized loot rewards after each encounter
-- Simple command-line gameplay with character selection and floor-based scaling
-- Run history logging in `Run_History.txt`
+## Technical Highlights
+- Organized code across multiple source files to improve modularity and maintainability
+- Managed game state and interactions between entities using structured class relationships
+- Implemented file I/O to log and persist gameplay results
+- Designed reusable helper functions to reduce redundancy and improve readability
 
 ## Build Instructions
 
@@ -40,14 +45,11 @@ Run the game with:
 5. Progress as far as you can through the dungeon.
 
 ## Purpose
-
-This project demonstrates key C++ concepts:
-
-- Classes and encapsulation
-- Object relationships and game state management
-- Modular code organization across multiple source files
-- Basic user interaction through the terminal
-- File I/O for run history tracking
+This project demonstrates:
+- Object-oriented programming (encapsulation, modularity)
+- Game state management
+- File I/O for persistent data
+- Structured program design in C++
 
 ## Files
 
